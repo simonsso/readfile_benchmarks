@@ -23,4 +23,4 @@ Replicate some benchmarks found on [the internet]
     user	0m2.547s
     sys	0m1.036s
 
-[the internet]:https://github.com/simonsso/readfile_benchmarks
+[the internet]:https://stackoverflow.com/a/51572325/391691
