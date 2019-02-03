@@ -1,0 +1,7 @@
+#!/bin/bash
+for i in main_c  main_c11  main_c17  main_gcc;
+do
+    echo $i:
+    time ./bin/$i $1 >/dev/null
+done
+
