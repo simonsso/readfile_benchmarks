@@ -1,5 +1,5 @@
 # readfile_benchmarks
-Replicate some benchmarks found on the internet
+Replicate some benchmarks found on [the internet] 
 
     $run  bigfile0 
     main_c:
@@ -22,3 +22,5 @@ Replicate some benchmarks found on the internet
     real	0m3.583s
     user	0m2.547s
     sys	0m1.036s
+
+[the internet]:https://github.com/simonsso/readfile_benchmarks
