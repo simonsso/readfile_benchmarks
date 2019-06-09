@@ -25,13 +25,13 @@ Replicate some benchmarks found on [the internet]
 
 [the internet]:https://stackoverflow.com/a/51572325/391691
 
-## Re-replicating tests
+## Re-replicating benchmarks
 
 First, re-replicating with the given Makefile (= no optimizations).
 
 > N.b. I had to create dirs bin and lib.
 
-### About this mac:
+About this mac:
 
 ```
 macOS Mojave 10.14.3
@@ -63,7 +63,7 @@ bin/main_gcc:
 	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.250.1)
 ```
 
-#### Large binary file
+### Large binary file
 
 https://dumps.wikimedia.org
 
@@ -91,7 +91,7 @@ user	12m40.760s
 sys	0m9.752s
 ```
 
-#### Semilarge textfile
+### Semilarge textfile
 
 http://corpus.canterbury.ac.nz/descriptions/#large
 
@@ -124,7 +124,7 @@ user	0m0.201s
 sys	0m0.003s
 ```
 
-## Re-re-replicating tests
+## Re-re-replicating benchmarks
 
 This time with optimizations enabled (changed Makefile: -O0 -> -O3).
 
@@ -152,9 +152,9 @@ user	1m32.714s
 sys	0m9.813s
 ```
 
-## Re-re-re-replicating tests
+## Re-re-re-replicating benchmarks
 
-Optimizations enabled, sync with stdio diabled.
+Optimizations enabled, sync with stdio diabled (changed printf to std::cout).
 
 ```
 $ ./run enwiki-latest-pages-articles-multistream.xml.bz2
