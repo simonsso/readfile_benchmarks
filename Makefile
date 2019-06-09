@@ -1,7 +1,7 @@
 CC		:= clang++
-C_FLAGS := -Wall -Wextra -O0
-C11_FLAGS := -std=c++17 -Wall -Wextra -O0
-C17_FLAGS := -std=c++11 -Wall -Wextra -O0
+C_FLAGS := -Wall -Wextra -O3
+C11_FLAGS := -std=c++17 -Wall -Wextra -O3
+C17_FLAGS := -std=c++11 -Wall -Wextra -O3
 
 BIN		:= bin
 SRC		:= src
