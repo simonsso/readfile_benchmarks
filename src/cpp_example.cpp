@@ -3,6 +3,7 @@
 #include <string>
 
 int main(int argc,char **argv){
+    std::ios::sync_with_stdio(false);
     std::string filename;
     if (argc == 2){
         filename = argv[1];
@@ -15,7 +16,7 @@ int main(int argc,char **argv){
         std::string line;
         while (getline(file, line)) {
             // using printf() in all tests for consistency
-            printf("%s", line.c_str());
+            std::cout << line << "\n";
         }
         file.close();
     }
